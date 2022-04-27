@@ -14,10 +14,6 @@ body {
     font-family: arial;
     font-size: 13px;
 }
-/* da togliere */
-.borded {
-    border: 2px solid red;  
-}
 
 .top-part {
     max-height: 5vh;
@@ -27,20 +23,20 @@ body {
 }
 
 .main-part {
-    max-height: 85vh;
-    max-width: 1300px;
-    margin: 30px auto;
-    padding-top: 10px;
+    max-width: 89vw;
+    margin: 0 auto;
+    padding-top: 23px;
+    flex-wrap: wrap;
 }
 
 .bottom-part {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
 .foot {
-    min-height: 9vh;
+    min-height: 8vh;
     background-color: #222222;
     align-items: center;    
     justify-content: space-between;
@@ -58,12 +54,14 @@ body {
     transform: rotate(45deg);
 }
 
-.card {
+.relative {
     position: relative;
-    display: inline-block;
-    max-width: calc(1300px / 7 - 6px);
-    margin-bottom: 11.5px;
-    margin-left: 2px;
+}
+
+.card {
+    margin: 8px 4px;
+    flex-basis: calc(100% / 7 - 8px);
+    
 }
 
 .card img {
@@ -81,7 +79,7 @@ body {
 .box i {
     display: block;
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     padding-bottom: 5px;
 }
 
