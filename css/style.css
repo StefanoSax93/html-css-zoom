@@ -29,12 +29,22 @@ body {
 .main-part {
     max-height: 85vh;
     max-width: 1300px;
-    margin: 28px auto 10px;
+    margin: 30px auto;
     padding-top: 10px;
 }
 
 .bottom-part {
-    min-height: 10vh;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.foot {
+    min-height: 9vh;
+    background-color: #222222;
+    align-items: center;    
+    justify-content: space-between;
+    padding-left: 10px;
 }
 
 .bg-grey {
@@ -67,3 +77,30 @@ body {
     padding: 5px;
     background-color: #4a4a4aa9;
 }
+
+.box i {
+    display: block;
+    text-align: center;
+    font-size: 1.7rem;
+    padding-bottom: 5px;
+}
+
+.icons {
+    gap: 17px;
+    align-items: center;
+    margin-right: 17px;
+}
+
+.green {
+    color: #47C900;
+}
+
+.right-foot {
+    align-self: stretch;
+    display: flex;
+    background-color: #4A4A4A;
+    align-items: center;
+    color: red;
+    padding: 0 20px;
+}
+
